@@ -1,0 +1,7 @@
+
+.container{
+    background-color: black;
+    display: grid;
+    font-family: 'Inter',sans-serif;
+    color: white;
+}
