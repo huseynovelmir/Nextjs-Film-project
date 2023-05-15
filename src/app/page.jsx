@@ -5,7 +5,7 @@ function Page() {
   return (
     <div>
 
-    Main
+ Main Area
     </div>
   );
 }
