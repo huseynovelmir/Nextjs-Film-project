@@ -1,4 +1,7 @@
-[
+{
+
+"results":[
+
   {
     "Title": "Avatar",
     "Year": "2009",
@@ -28,6 +31,7 @@
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDg1Nzk1MV5BMl5BanBnXkFtZTcwMDk0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
     ]
   },
+
   {
     "Title": "I Am Legend",
     "Year": "2007",
@@ -62,7 +66,7 @@
     "Rated": "R",
     "Released": "09 Mar 2007",
     "Runtime": "117 min",
-    "Genre": "Action, Drama, Fantasy",
+    "Genre": "Fantasy, Drama, action",
     "Director": "Zack Snyder",
     "Writer": "Zack Snyder (screenplay), Kurt Johnstad (screenplay), Michael Gordon (screenplay), Frank Miller (graphic novel), Lynn Varley (graphic novel)",
     "Actors": "Gerard Butler, Lena Headey, Dominic West, David Wenham",
@@ -89,7 +93,7 @@
     "Rated": "PG-13",
     "Released": "04 May 2012",
     "Runtime": "143 min",
-    "Genre": "Action, Sci-Fi, Thriller",
+    "Genre": "Thriller, Sci-Fi, action",
     "Director": "Joss Whedon",
     "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
     "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
@@ -468,4 +472,4 @@
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMyNjg5ODYwNF5BMl5BanBnXkFtZTgwMTE1NDU4OTE@._V1_SY1000_CR0,0,1477,1000_AL_.jpg"
     ]
   }
-]
+]}
