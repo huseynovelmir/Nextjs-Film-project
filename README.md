@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 [![Maintainability](https://api.codeclimate.com/v1/badges/3a10e880ebbe715ee33c/maintainability)](https://codeclimate.com/github/huseynovelmir/Film-project/maintainability) 
 
 ## Getting Started
-#
+
 
 First, run the development server:
 
