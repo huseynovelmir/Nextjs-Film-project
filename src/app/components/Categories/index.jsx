@@ -19,7 +19,7 @@ function Categories({movie = {}}) {
    
         </Link>
       ))}
-      
+     
       </div>
   );
 }
