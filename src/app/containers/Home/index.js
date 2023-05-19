@@ -9,7 +9,9 @@ function HomePage() {
     <div>
       <FeaturedMovie movie={Movies.results[0]}/>
       <Categories movie={Movies.results.slice(0,5)}/>
-      <MoviesSection/>
+      <MoviesSection 
+      title = "Popular Films"
+      movie={Movies.results.slice(0,7)}/>
     </div>
   )
 }
