@@ -2,8 +2,8 @@ import React from 'react'
 import styles from "./styles.module.css"
 import Link from 'next/link'
 import Image from 'next/image'
-function FeaturedMovie({ movie = {} , isCompact = "true"}) {
-  const { overview, title,  poster_path } = movie
+function FeaturedMovie({ movie = {}, isCompact = "true" }) {
+  const { overview, title, poster_path } = movie
   return (
     <div className={styles.movieWrapper}>
       <h1 className={styles.movieTitle}>{title}</h1>
