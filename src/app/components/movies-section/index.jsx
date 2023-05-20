@@ -3,23 +3,32 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from "./styles.module.css"
 
-function MoviesSection({ movie = {}, title }) {
+function MoviesSection({ movie, title }) {
+  // console.log(movie);
   return (
 
-    <div>
-      <h3>{title}</h3>
-      {movie.map((films) => (
+    <div className={styles.movieSection}>
+      <h3 className={styles.title}>{title}</h3>
 
-      <div>
-        <div>
-          <Link>
-          <Image/>
-          </Link>
-          saa
-        </div>
-      </div>
+        <div className={styles.movies}>
+           {movie.map((films) => (
+          <div className={styles.movie} key={films.id}>
+            <Link href={`/films/${films.id}`}>
+              <Image
+                fill
+                unoptimized
+                   src={`https://image.tmdb.org/t/p/original${films.poster_path}`}
+                   
 
+                alt={films.title}
+              />
+
+            </Link>
+
+          </div>
         ))}
+        </div>
+
 
 
 

@@ -2,15 +2,21 @@ import React from 'react'
 import styles from "./styles.module.css"
 import Link from 'next/link'
 import Image from 'next/image'
-function FeaturedMovie({movie = {} }) {
-  const { Plot, Title, Images } = movie
+function FeaturedMovie({ movie = {} , isCompact = "true"}) {
+  const { overview, title,  poster_path } = movie
   return (
     <div className={styles.movieWrapper}>
-      <h1 className={styles.movieTitle}>{Title}</h1>
-      <p className={styles.movieOverview}>{Plot}</p>
+      <h1 className={styles.movieTitle}>{title}</h1>
+
+      <p
+        className={`${styles.overview} ${isCompact ? styles.shortOverview : ""
+          }`}
+      >
+        {overview}
+      </p>
       <div className={styles.actionButtons}>
 
-        <Link className={styles.playButton} href='/'>Play</Link>
+        <Link className={styles.playButton} href={`/movie/${movie.id}`}>Play</Link>
 
         <button className={styles.addButton}>+</button>
 
@@ -18,15 +24,15 @@ function FeaturedMovie({movie = {} }) {
 
       <div className={styles.moviePoster}>
         <div className={styles.moviePosterOverlay}></div>
-      <Image
-        unoptimized
-        alt={Title}
-            src={Images[1]}
-        fill
-      
-      />
+        <Image
+          unoptimized
+          alt={title}
+          src={`https://image.tmdb.org/t/p/original${poster_path}`}
+          fill
 
-       
+        />
+
+
       </div>
     </div>
   )

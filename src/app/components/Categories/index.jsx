@@ -2,20 +2,20 @@
 import React from 'react'
 import styles from "./styles.module.css"
 import Link from 'next/link'
-function Categories({movie = {}}) {
+function Categories({categories}) {
 
 
 
   return (
     <div className={styles.categories}>
-      {movie.map((category) => (
+      {categories.map((category) => (
       
         <Link
-          key={category.Title}
+          key={category.id}
           className={styles.category}
-          href={category.Title}
+          href={`/${category.id}`}
         >
-          <div className={styles.name}>{category.Genre.split(' ')[0].slice(0,-1)}</div>
+          <div className={styles.name}>{category.name}</div>
    
         </Link>
       ))}
