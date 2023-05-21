@@ -26,9 +26,9 @@ function FeaturedMovie({ movie = {}, isCompact = "true" }) {
         <div className={styles.moviePosterOverlay}></div>
         <Image
           unoptimized
+          fill
           alt={title}
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
-          fill
 
         />
 

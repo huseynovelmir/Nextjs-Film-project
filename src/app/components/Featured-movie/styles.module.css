@@ -1,9 +1,11 @@
 .movieWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 56px;
-  margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    margin-inline: 36px;
+
 }
 
 .movieTitle {
@@ -23,6 +25,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 .actionButtons {
     display: flex;
     justify-content: space-between;
@@ -61,24 +64,29 @@
     margin-left: 20px;
 }
 
+
 .moviePoster img {
-    height: auto !important;
-    z-index: -2;
-    max-height: 100vh;
-    object-fit: cover;
+
+    height:max-content !important;
+    z-index: -9999;
+     /* filter:blur(3px); */
+    /* max-height: 100vh; */
+    /* object-fit:cover; */
 }
 
 
 .moviePosterOverlay {
+
     position: absolute;
+    height: auto !important;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: linear-gradient(0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.9) 30%,
-        rgba(0, 0, 0, 0.7) 50%,
-        rgba(255, 255, 255, 0) 100%);
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 30%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(255, 255, 255, 0) 100%);
     z-index: -1;
 }

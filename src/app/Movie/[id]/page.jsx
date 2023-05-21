@@ -1,13 +1,12 @@
-import React from 'react'
-import MovieContainer from '@/containers/movie'
-import Movie from "@/Mocks/Movies.json"
+import React from 'react';
+import Movies from "@/Mocks/Movies.json"
+import { MovieContainer } from '@/containers/Home/movie';
 
-function MoviePage({params}) {
-  const movieDetail = Movie.results.find(movie => movie.id === params.id)
-  console.log(params);
+function moviePage({params}) {
+    const movieDetail = Movies.results.find(movie =>movie.id.toString() ===params.id)
   return (
-    <div>MoviePage</div>
+   <MovieContainer movie={movieDetail}/>
   )
 }
 
-export default MoviePage
+export default moviePage
