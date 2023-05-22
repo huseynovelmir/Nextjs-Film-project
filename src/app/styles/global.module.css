@@ -1,13 +1,33 @@
-
-.container{
+.container {
     max-width: 1440px;
     background-color: black;
     display: grid;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     color: white;
-    
+
 }
+
 
 .container::-webkit-scrollbar {
     display: none;
+}
+
+.notFoundContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+}
+.notFoundContainer h1{
+    font-size: 30px;
+
+}
+.notFounfLink {
+
+    color: dodgerblue;
+    margin-top: 10px;
+    font-size: 24px;
 }

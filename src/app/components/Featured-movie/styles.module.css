@@ -64,21 +64,8 @@
     margin-left: 20px;
 }
 
-
-.moviePoster img {
-
-    height:max-content !important;
-    z-index: -9999;
-     /* filter:blur(3px); */
-    /* max-height: 100vh; */
-    /* object-fit:cover; */
-}
-
-
 .moviePosterOverlay {
-
     position: absolute;
-    height: auto !important;
     top: 0;
     left: 0;
     right: 0;
@@ -89,4 +76,11 @@
             rgba(0, 0, 0, 0.7) 50%,
             rgba(255, 255, 255, 0) 100%);
     z-index: -1;
+}
+
+.moviePoster img {
+    height: auto !important;
+    z-index: -2;
+    max-height: 100vh;
+    object-fit: cover;
 }
