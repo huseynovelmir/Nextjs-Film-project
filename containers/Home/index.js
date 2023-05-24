@@ -1,8 +1,8 @@
 import React from 'react'
-import Categories from '@/components/Categories'
+import Categories from '@/components/Categories/index'
 import Movies from "@/Mocks/Movies.json"
 import FeaturedMovie from '@/components/Featured-movie/index'
-import MoviesSection from '@/components/movies-section'
+import MoviesSection from '@/components/movies-section/index'
 import Genres from "@/Mocks/Genres.json"
 
 function HomePage() {

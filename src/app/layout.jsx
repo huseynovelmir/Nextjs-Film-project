@@ -1,8 +1,8 @@
-import "./styles/reset.css"
-import global from "./styles/global.module.css"
+import "@/styles/reset.css"
+import global from "@/styles/global.module.css"
 import { Inter } from 'next/font/google';
-import Header from   "./components/header/index";
-import Footer from "./components/footer/index";
+import Header from   "@/components/header/index";
+import Footer from "@/components/footer/index";
 // import Head from "next/head";
 
 

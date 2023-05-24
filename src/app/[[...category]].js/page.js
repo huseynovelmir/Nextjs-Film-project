@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeContainer from "@/containers/Home"
+import HomeContainer from "@/containers/Home/index"
 import Movies from "@/Mocks/Movies.json"
 const API_URL = 'https://www.themoviedb.org/'
 
