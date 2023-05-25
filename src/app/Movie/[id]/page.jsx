@@ -1,6 +1,6 @@
 import React from 'react';
 import Movies from "@/Mocks/Movies.json"
-import { MovieContainer } from '@/containers/Home/index';
+import  MovieContainer  from '@/containers/Home';
 import { notFound } from "next/navigation"
 
 function moviePage({ params, searchParams }) {

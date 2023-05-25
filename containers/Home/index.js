@@ -20,6 +20,7 @@ function HomePage() {
           Movies.results.slice(10, 20)
         }
         />
+
     </div>
   )
 }
