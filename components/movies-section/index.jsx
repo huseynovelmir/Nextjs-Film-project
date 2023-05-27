@@ -4,7 +4,8 @@ import Image from 'next/image'
 import styles from "./styles.module.css"
 
 function MoviesSection({ movie, title }) {
-  // console.log(movie);
+
+  
   return (
 
     <div className={styles.movieSection}>
@@ -17,21 +18,15 @@ function MoviesSection({ movie, title }) {
               <Image
                 fill
                 unoptimized
-                   src={`https://image.tmdb.org/t/p/original${films.poster_path}`}
+                src={`https://image.tmdb.org/t/p/original${films.poster_path}`}
                    
 
                 alt={films.title}
               />
-
             </Link>
-
           </div>
         ))}
         </div>
-
-
-
-
     </div>
   )
 }
