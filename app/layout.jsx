@@ -2,7 +2,7 @@ import "@/styles/reset.css"
 import global from "@/styles/global.module.css"
 import { Inter } from 'next/font/google';
 import Header from "@/components/header/index";
-import Footer from "@/components/footer/index";
+import Footer from "@/components/header/index";
 
 export const metadata = {
   title: 'Film.com',

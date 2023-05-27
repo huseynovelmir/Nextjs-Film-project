@@ -3,7 +3,9 @@ import HomePage from "@/containers/Home/index";
 
 
 function Page() {
-  return <HomePage/>
+  return (
+<HomePage/>
+  )
 }
 
 export default Page

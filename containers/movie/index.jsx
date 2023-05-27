@@ -1,4 +1,4 @@
-import FeaturedMovie from "@/components/Featured-movie";
+import FeaturedMovie from "@/components/Featured-movie/index";
 import React from "react";
 
 

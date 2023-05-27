@@ -1,6 +1,6 @@
 import React from "react";
 
-import FeatureMovieLoading from "@/components/Featured-movie/index";
+import FeatureMovieLoading from "@/components/Featured-movie/loading";
 import CategoriesLoading from "@/components/Categories/loading";
 import MoviesSectionLoading from "@/components/movies-section/loading";
 function HomeLoading() {
