@@ -8,7 +8,7 @@ function moviePage({ params, searchParams }) {
   const movieDetail = Movies.results.find(
     
 
-    movie => movie.id === params.id)
+    (movie) => movie.id === params.id)
 
     if (!movieDetail) { 
       notFound()
