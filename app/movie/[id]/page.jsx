@@ -5,10 +5,11 @@ import { notFound } from "next/navigation"
 
 
 function moviePage({ params, searchParams }) {
+
   const movieDetail = Movies.results.find(
     
 
-    (movie) => movie.id === params.id)
+    (movie) => movie.id.toString() === params.id)
 
     if (!movieDetail) { 
       notFound()
