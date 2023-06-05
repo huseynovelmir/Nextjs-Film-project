@@ -6,11 +6,11 @@ import MoviesSectionLoading from "@/components/movies-section/loading";
 function HomeLoading() {
     return (
         <>
-            <FeatureMovieLoading />
+            {/* <FeatureMovieLoading /> */}
             <CategoriesLoading />
+            {/* <MoviesSectionLoading />
             <MoviesSectionLoading />
-            <MoviesSectionLoading />
-            <MoviesSectionLoading />
+            <MoviesSectionLoading /> */}
 
         </>
     );
