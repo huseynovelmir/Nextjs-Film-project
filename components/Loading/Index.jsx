@@ -3,9 +3,9 @@ import styles from "./styles.module.css"
 
 function loading() {
   return (
-      <div className={styles.loaderContainer}>
+    <div className={styles.loaderContainer}>
 
-        <div className={styles.loader}></div>
+      <div className={styles.loader}></div>
     </div>
   )
 }
