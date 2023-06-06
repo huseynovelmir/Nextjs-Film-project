@@ -1,18 +1,21 @@
 import React from "react";
 
-import FeatureMovieLoading from "@/components/Featured-movie/loading";
 import CategoriesLoading from "@/components/Categories/loading";
+import FeatureMovieLoading from "@/components/Featured-movie/loading";
 import MoviesSectionLoading from "@/components/movies-section/loading";
-function HomeLoading() {
-    return (
-        <>
-            {/* <FeatureMovieLoading /> */}
-            <CategoriesLoading />
-            {/* <MoviesSectionLoading />
-            <MoviesSectionLoading />
-            <MoviesSectionLoading /> */}
 
-        </>
+
+function HomeLoading() {
+
+
+    return (
+        <div>
+            <FeatureMovieLoading/>
+            <CategoriesLoading/>
+            <MoviesSectionLoading />
+            <MoviesSectionLoading />
+            
+        </div>
     );
 }
 

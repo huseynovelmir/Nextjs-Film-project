@@ -5,7 +5,7 @@ function loading() {
   return (
       <div className={styles.loaderContainer}>
 
-        <div class={styles.loader}></div>
+        <div className={styles.loader}></div>
     </div>
   )
 }

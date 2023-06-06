@@ -1,6 +1,7 @@
 .movieWrapper {
     display: flex;
     flex-direction: column;
+    height: 250px !important;
     gap: 24px;
     margin-top: 56px;
     margin-bottom: 56px;

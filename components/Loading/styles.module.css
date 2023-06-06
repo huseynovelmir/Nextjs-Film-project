@@ -5,37 +5,16 @@
     width: 100%;
     height: 100vh;
 }
-
 .loader {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to right,
-            rgba(67, 162, 211, 1) 20%,
-            rgba(67, 162, 211, 0.8) 35%,
-            rgba(67, 162, 211, 0) 35%);
-    animation: animate 1s linear infinite;
+  border: 5px solid rgb(32, 30, 30); 
+  border-top: 5px solid rgb(81, 78, 78); 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
 }
 
-.loader::before {
-    position: absolute;
-    content: "";
-    background: black;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    border-radius: 10rem;
-}
-
-@keyframes animate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
