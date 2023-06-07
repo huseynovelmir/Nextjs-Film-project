@@ -16,7 +16,7 @@ console.log(API_URL, "hello");
 
 function HomePage({ params }) {
 
-
+let data;
 
   let selectedCategory;
   // await getPopularMovies()
