@@ -2,24 +2,27 @@ import React from 'react'
 import HomeContainer from "@/containers/Home"
 import Movies from "@/mocks/Movies.json"
 
-const API_URL = 'https://api.themoviedb.org/3'
-console.log(API_URL, "hello");
-// const getPopularMovies = async () => {
-//   const res = await fetch(
-//     `${API_URL}/movie/popular?language=en-US&page=1`, `${process.env.API_KEY}`
-//     );
-
-//   const data = await res.json()
-//   console.log(data);
-// }
 
 
-function HomePage({ params }) {
+const getPopularMovies = async () => {
 
-let data;
+ 
+
+  const res = await fetch(`${process.env.API_URL}/movie/popular?api_key=${process.env.API_KEY}&page=1`);
+
+  const data = await res.json()
+  console.log(res);
+}
+
+
+
+
+ async function HomePage({ params }) {
+  
+
 
   let selectedCategory;
-  // await getPopularMovies()
+  await getPopularMovies()
 
   if (params.category?.length > 0) {
     selectedCategory = true;
