@@ -15,9 +15,9 @@ const getTopretedmovie = async () => {
 
 
 
-  const res = await fetch(`${process.env.API_URL}/movie/top_rated?language=en-US&page=1`, options);
+  const rest = await fetch(`${process.env.API_URL}/movie/top_rated?language=en-US&page=1`, options);
 
-  const data = await res.json()
+  const data = await rest.json()
   console.log(data);
 
 
