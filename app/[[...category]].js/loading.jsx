@@ -10,11 +10,11 @@ function HomeLoading() {
 
     return (
         <div>
-            <FeatureMovieLoading/>
-            <CategoriesLoading/>
+            <FeatureMovieLoading />
+            <CategoriesLoading />
             <MoviesSectionLoading />
             <MoviesSectionLoading />
-            
+
         </div>
     );
 }

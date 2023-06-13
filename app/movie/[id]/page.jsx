@@ -2,7 +2,7 @@ import React from 'react';
 import { notFound } from "next/navigation"
 import Movies from "@/mocks/Movies.json"
 import MovieContainer from '@/containers/movie';
-import { resolve } from 'styled-jsx/css';
+
  
 
 
