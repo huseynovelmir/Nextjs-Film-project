@@ -2,6 +2,7 @@ import React from 'react'
 import HomeContainer from "@/containers/Home"
 import Movies from "@/mocks/Movies.json"
 
+
 const options = {
   method: 'GET',
   headers: {
@@ -12,13 +13,12 @@ const options = {
 
 
 const getTopretedmovie = async () => {
+  const rest = await fetch(
+    `${process.env.API_URL}/movie/top_rated?api_key=${process.env.API_KEY}&page=1`
+  );
 
 
-
-  const rest = await fetch(`${process.env.API_URL}/movie/top_rated?language=en-US&page=1`, options);
-
-  const data = await rest.json()
-  console.log(data);
+  return rest.json()
 
 
 }
@@ -26,25 +26,27 @@ const getTopretedmovie = async () => {
 
 
 
-async function HomePage({ params }) {
 
-  console.log(process.env.API_KEY);
+async function HomePage({ params }) {
 
 
   let selectedCategory;
-  const topRatedmovie = await getTopretedmovie()
+  const { results: topRatedmovie } = await getTopretedmovie();
+
+
 
   if (params.category?.length > 0) {
     selectedCategory = true;
   }
   return (
     <HomeContainer
-    topRatedmovie={topRatedmovie}
+      topRatedmovie={topRatedmovie}
       selectedCategory={{
         id: params.category?.[0] ?? "",
         movies: selectedCategory ? Movies.results.slice(0, 7) : [],
       }} />
   );
+
 }
 
 export default HomePage
