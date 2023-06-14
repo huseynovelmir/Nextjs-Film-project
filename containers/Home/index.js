@@ -5,7 +5,7 @@ import FeaturedMovie from '@/components/Featured-movie/index'
 import MoviesSection from '@/components/movies-section/index'
 import Genres from "@/mocks/Genres.json"
 
-function HomePage({topRatedmovie = []}) {
+function HomePage({topRatedMovies = [], popularMovies= [],categories}) {
 
   return (
     <div >
@@ -18,9 +18,9 @@ function HomePage({topRatedmovie = []}) {
     movie={sellectCategory.movie}
     />
     )} */}
-      <Categories categories={Genres.genres.slice(0,5)}/>
-      <MoviesSection title = "Popular Films" movie={topRatedmovie.slice(0,10)}/>
-      <MoviesSection title = "Your Favorites" movie = {topRatedmovie.slice(10, 20)}/>
+      <Categories categories={categories.slice(0,5)}/>
+      <MoviesSection title = "Top Rated Movies" movie={topRatedMovies.slice(10,20)}/>
+      <MoviesSection title = "Popular Movies" movie={popularMovies.slice(0,10)}/>
 
     </div>
   )

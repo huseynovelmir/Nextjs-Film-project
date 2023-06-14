@@ -14,11 +14,11 @@ const fetchMovieApi = async (pathname, query = "") => {
 
 
 
-const getTopRatedMovies = async () => {
+const gettopRatedMovies = async () => {
     return fetchMovieApi("/movie/top_rated", "page=1");
 };
 
-const getPopularMovies = async () => {
+const getpopularMovies = async () => {
     return fetchMovieApi("/movie/popular", "page=1");
 };
 
@@ -26,6 +26,6 @@ const getPopularMovies = async () => {
 
 export {
     fetchMovieApi,
-    getTopRatedMovies,
-    getPopularMovies,
+    gettopRatedMovies,
+    getpopularMovies,
 }

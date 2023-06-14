@@ -1,29 +1,11 @@
 import React from 'react'
 import HomeContainer from "@/containers/Home"
 import Movies from "@/mocks/Movies.json"
-
-
-const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: `Bearer ${process.env.API_KEY}`
-  }
-};
-
-
-const getTopretedmovie = async () => {
-  const rest = await fetch(
-    `${process.env.API_URL}/movie/top_rated?api_key=${process.env.API_KEY}&page=1`
-  );
-
-
-  return rest.json()
-
-
-}
-
-
+import {
+  fetchMovieApi,
+  gettopRatedMovies,
+  getpopularMovies,
+} from "@/services/movie"
 
 
 
@@ -31,8 +13,19 @@ async function HomePage({ params }) {
 
 
   let selectedCategory;
-  const { results: topRatedmovie } = await getTopretedmovie();
 
+  const [
+    { results: topRatedMovies },
+    { results: popularMovies },
+    { genres: categories }
+
+  ] = await Promise.all([
+
+    gettopRatedMovies(),
+    getpopularMovies(),
+
+  ]);
+  console.log(topRatedMovies);
 
 
   if (params.category?.length > 0) {
@@ -40,7 +33,10 @@ async function HomePage({ params }) {
   }
   return (
     <HomeContainer
-      topRatedmovie={topRatedmovie}
+      topRatedMovies={topRatedMovies}
+      popularMovies={popularMovies}
+      categories={categories}
+
       selectedCategory={{
         id: params.category?.[0] ?? "",
         movies: selectedCategory ? Movies.results.slice(0, 7) : [],
