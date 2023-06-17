@@ -1,35 +1,41 @@
 import React from 'react'
 import HomeContainer from "@/containers/Home"
-import Movies from "@/mocks/Movies.json"
 import {
   fetchMovieApi,
   gettopRatedMovies,
   getpopularMovies,
+  getcategories,
+  getdiscover,
 } from "@/services/movie"
 
 
 
 async function HomePage({ params }) {
 
-
+  
   let selectedCategory;
-
+  
   const [
     { results: topRatedMovies },
     { results: popularMovies },
-    { genres: categories }
-
+    { genres: categories },
+    
+    
   ] = await Promise.all([
 
     gettopRatedMovies(),
     getpopularMovies(),
-
+    getcategories(),
+  
+    
   ]);
-  console.log(topRatedMovies);
+
 
 
   if (params.category?.length > 0) {
-    selectedCategory = true;
+    const {results} = await getdiscover(params.category[0]);
+    selectedCategory = results
+  
   }
   return (
     <HomeContainer
@@ -39,7 +45,7 @@ async function HomePage({ params }) {
 
       selectedCategory={{
         id: params.category?.[0] ?? "",
-        movies: selectedCategory ? Movies.results.slice(0, 7) : [],
+        movies: selectedCategory ? selectedCategory.slice(0, 7) : [],
       }} />
   );
 

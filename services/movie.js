@@ -22,10 +22,21 @@ const getpopularMovies = async () => {
     return fetchMovieApi("/movie/popular", "page=1");
 };
 
+const getcategories = async () => {
+    return fetchMovieApi("/genre/movie/list", "page=1")
+}
 
-
+const getdiscover = async (genreId) => {
+    return fetchMovieApi("/discover/movie", `with_genres=${genreId}`)
+}
+const getmovie = async (movieId) => {
+    return fetchMovieApi (`/movie/${movieId}`)
+}
 export {
     fetchMovieApi,
     gettopRatedMovies,
     getpopularMovies,
+    getcategories,
+    getdiscover,
+    getmovie,
 }
