@@ -6,7 +6,8 @@ import global from "@/styles/global.module.css"
 function error() {
   return (
       <div className={global.notFoundContainer}>
-          <h1>Somthing Went Wrong. Sorry for that! </h1>
+          <h1>Somthing Went Wrong. </h1>
+          <h1>Sorry for that!</h1>
           <Link
               className={global.notFounfLink}
               href="/"

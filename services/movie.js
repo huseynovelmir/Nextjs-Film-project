@@ -1,9 +1,13 @@
+
+
 const fetchMovieApi = async (pathname, query = "") => {
     try {
         const res = await fetch(
             `${process.env.API_URL}${pathname}?api_key=${process.env.API_KEY}&${query}`
         );
+    
         return res.json();
+        //  throw new Error("asd")
     } catch (error) {
         throw new Error(error)
     }
