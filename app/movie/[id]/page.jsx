@@ -1,10 +1,7 @@
 import React from 'react';
 import { notFound } from "next/navigation"
-
 import MovieContainer from '@/containers/movie';
-import {getmovie} from "@/services/movie"
- 
-
+import { getmovie } from "@/services/movie"
 
 async function moviePage({ params, searchParams }) {
 
@@ -13,8 +10,6 @@ async function moviePage({ params, searchParams }) {
   if (!movieDetail) {
     notFound()
   }
-
-
 
   return (
     <MovieContainer movie={movieDetail} />

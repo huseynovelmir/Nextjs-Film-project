@@ -3,8 +3,8 @@ import Loading from '@/components/Loading'
 
 function loading() {
   return (
-    <div style={{height: "100vh"}}>
-        <Loading/>
+    <div style={{ height: "100vh" }}>
+      <Loading />
     </div>
   )
 }

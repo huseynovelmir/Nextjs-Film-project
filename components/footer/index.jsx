@@ -7,7 +7,7 @@ function Footer() {
     <footer className={styles.footer}>
       Made with 🤍 by&nbsp;
       <Link href='https://github.com/huseynovelmir' className={styles.link}>  Elmir Huseynov </Link>
-      
+
 
     </footer>
   )

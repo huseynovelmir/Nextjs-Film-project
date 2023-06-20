@@ -9,7 +9,6 @@ function Movie404() {
       <Link
         className={global.notFounfLink}
         href="/"
-      
       >
         Go home
       </Link>

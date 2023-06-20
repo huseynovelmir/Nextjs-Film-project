@@ -8,21 +8,13 @@ function FeaturedMovie({ movie = {}, isCompact = "true" }) {
   return (
     <div className={styles.movieWrapper}>
       <h1 className={styles.movieTitle}>{title}</h1>
-
-      <p
-        className={`${styles.overview} ${isCompact ? styles.shortOverview : ""
-          }`}
-      >
+      <p className={`${styles.overview} ${isCompact ? styles.shortOverview : ""}`}>
         {overview}
       </p>
       <div className={styles.actionButtons}>
-
         <Link className={styles.playButton} href={`/movie/${movie.id}`}>Play</Link>
-
         <button className={styles.addButton}>+</button>
-
       </div>
-
       <div className={styles.moviePoster}>
         <div className={styles.moviePosterOverlay}></div>
         <Image
@@ -30,10 +22,7 @@ function FeaturedMovie({ movie = {}, isCompact = "true" }) {
           fill
           alt={title}
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
-
         />
-
-
       </div>
     </div>
   )
