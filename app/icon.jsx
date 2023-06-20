@@ -14,6 +14,7 @@ export default function Icon() {
   return new ImageResponse(
     (
       <div
+      
         style={{
           fontSize: 24,
           background: 'black',
