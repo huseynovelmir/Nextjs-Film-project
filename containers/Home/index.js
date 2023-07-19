@@ -12,8 +12,7 @@ function HomePage({topRatedMovies = [], popularMovies= [], categories,selectedCa
       <FeaturedMovie movie={topRatedMovies[0]}/>
       <Categories categories={categories.slice(0,5)}/>
     {selectedCategory.movies.length > 0 && (
-      <MoviesSection title={categories.find((genre) => `${genre.id}`== selectedCategory.id)
-      .name
+      <MoviesSection title={categories.find((genre) => `${genre.id}`== selectedCategory.id).name
     }
    movie={selectedCategory.movies.slice(1, 20)}
     />
