@@ -10,13 +10,11 @@ export const metadata = {
   title: 'Findmovie.com',
 }
 
-const inter = Inter({
-  subsets: ['latin'],
-});
+
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" >
       <Head>
         <link rel='icon' href='/play.png' />
       </Head>

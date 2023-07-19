@@ -7,7 +7,6 @@ const fetchMovieApi = async (pathname, query = "") => {
         );
     
         return res.json();
-        //  throw new Error("asd")
     } catch (error) {
         throw new Error(error)
     }
