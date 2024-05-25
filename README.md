@@ -1,38 +1,46 @@
-# Welcome Film-Project
-[Click to visit website](https://nextjs-film-project-git-main-huseynovelmir789-gmailcom.vercel.app/?vercelToolbarCode=9sG7BEUiQeQ29YN)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/3a10e880ebbe715ee33c/maintainability)](https://codeclimate.com/github/huseynovelmir/Film-project/maintainability) 
 
+# Next.js Film Project
+
+Welcome to the Next.js Film Project! This repository contains a full-featured movie browsing platform developed using Next.js. The application provides a seamless user experience for discovering and exploring a wide range of movies.
+
+**Note:** This was my first project using Next.js, and I aimed to learn and explore the capabilities of this powerful framework while building a functional and dynamic movie browsing platform.
+
+
+## Features
+
+- **Movie Listings:** View a comprehensive list of movies, complete with details and images.
+- **Search Functionality:** Search for movies based on various criteria such as title, genre, and release year.
+- **Responsive Design:** Fully responsive design ensures the application looks great on all devices.
+- **Fast Performance:** Built with Next.js to ensure fast load times and a smooth user experience.
+- **SEO Optimized:** Optimized for search engines to help users find the movie listings easily.
+
+## Technologies Used
+
+- **Next.js:** Framework for server-rendered React applications.
+- **React:** JavaScript library for building user interfaces.
+- **Node.js:** JavaScript runtime environment.
+- **Express:** Web framework for Node.js.
+- **MongoDB:** NoSQL database for storing movie data.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **Axios:** Promise-based HTTP client for making API requests.
+
 ## Getting Started
 
+Follow these steps to get the project up and running on your local machine:
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (v14 or later)
+- npm (v6 or later) or yarn (v1.22 or later)
+- MongoDB (local or Atlas)
 
-You can start editing a page by modifying any page within the `APP` component. The page updates automatically as you edit the file.
+### Installation
 
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out  [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/huseynovelmir/Nextjs-Film-project.git
