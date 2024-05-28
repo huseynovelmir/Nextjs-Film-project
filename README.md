@@ -2,7 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/3a10e880ebbe715ee33c/maintainability)](https://codeclimate.com/github/huseynovelmir/Film-project/maintainability) 
 
-# Next.js Film Project
+# Next.js Film Project [clcik to visit the site](https://nextjs-film-project-omega.vercel.app/)
 
 Welcome to the Next.js Film Project! This repository contains a full-featured movie browsing platform developed using Next.js. The application provides a seamless user experience for discovering and exploring a wide range of movies.
 
